@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Bryan Liang</title>
 </head>
 
 <body>
-    <div class='uk-container-center uk-margin-top uk-dark'>
+    <div class='uk-container-center uk-dark'>
         <nav class="uk-navbar-container uk-background-secondary" uk-sticky="animation: uk-animation-slide-top; top: 100">
-            <div class="uk-navbar-left uk-background-default">
+            <div class="uk-navbar-left uk-background-default uk-visible@s">
                 <a href="#" class="uk-navbar-nav uk-logo uk-padding-small" uk-scroll>Bryan Liang</a>
                 <ul class='uk-navbar-nav' uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                     <li>
@@ -26,46 +27,93 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+
+            </div>
+            <a href="#offcanvas-nav" class='uk-padding uk-hidden@s' uk-navbar-toggle-icon uk-toggle></a>
+            <a href="#" class="uk-navbar-brand uk-logo uk-padding-small uk-hidden@s" uk-scroll>Bryan Liang</a>
         </nav>
+    </div>
+
+
+    <div class='uk-background-cover' style="background-image: url(assets/images/jorg-angeli-128802-unsplash.jpg)" uk-height-viewport="expand: false">
+
+        <h1 class='uk-width-1-1 uk-text-center uk-heading-primary' id='aboutMe'>About Me</h1>
+        <div class="uk-container">
+            <img class='uk-align-left@s uk-padding uk-margin-auto' src="https://via.placeholder.com/200x200" alt="200x200">
+            <p class='uk-padding uk-dark'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eos tempora! Ducimus, dolore in incidunt dignissimos hic consequatur,
+                fugiat, porro ab animi culpa tempore quod debitis cum similique praesentium earum? Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Magnam ab necessitatibus aut quae ducimus fugiat libero aliquam aliquid
+                officiis expedita pariatur officia tenetur praesentium debitis, blanditiis culpa? Nemo, iure facere.
+            </p>
         </div>
     </div>
-    <h1 class='uk-text-center' id='aboutMe'>About Me</h1>
-    <h1 class="uk-text-center" id="portfolio">Portfolio</h1>
-    <div uk-slideshow="animation: slide" class='uk-container-center'>
-        <ul class="uk-slideshow-items">
-            <li>
-                <a href="https://liangbryan2.github.io/Crystal-Game/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/crystal.png" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-            <li>
-                <a href="https://liangbryan2.github.io/TriviaGame/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/trivia.png" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-            <li>
-                <a href="https://liangbryan2.github.io/RPS-Multiplayer/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/rps.png" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-            <li>
-                <a href="https://liangbryan2.github.io/giftastic/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/gifs.png" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-            <li>
-                <a href="https://liangbryan2.github.io/Word-Guess-Game/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/hangman.png" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-            <li>
-                <a href="https://brianq0.github.io/SpotifyEvents/" target="_blank">
-                    <img class='uk-width-1-1 uk-height-1-1' src="assets/images/eventspotter.PNG" alt="crystal game" uk-cover-container uk-img>
-                </a>
-            </li>
-        </ul>
+
+
+    <div class='uk-background-cover' style="background-image: url(assets/images/pascal-debrunner-634122-unsplash.jpg)" uk-height-viewport="expand: false">
+        <h1 class="uk-text-center uk-heading-primary" id="portfolio">Portfolio</h1>
+        <div uk-slideshow="animation: slide" class='uk-container uk-padding-large'>
+            <ul class="uk-slideshow-items">
+                <li>
+                    <a href="https://liangbryan2.github.io/Crystal-Game/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/crystal.png" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://liangbryan2.github.io/TriviaGame/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/trivia.png" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://liangbryan2.github.io/RPS-Multiplayer/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/rps.png" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://liangbryan2.github.io/giftastic/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/gifs.png" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://liangbryan2.github.io/Word-Guess-Game/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/hangman.png" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://brianq0.github.io/SpotifyEvents/" target="_blank">
+                        <img class='uk-width-1-1 uk-height-1-1' src="assets/images/eventspotter.PNG" alt="crystal game" uk-cover-container uk-img>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <h1 class='uk-text-center' id='contact'>Contact</h1>
+    <div class='uk-background-cover' style="background-image: url(assets/images/wellington-rodrigues-574976-unsplash.jpg)" uk-height-viewport="expand: false">
+        <h1 class='uk-text-center uk-heading-primary' id='contact'>Contact</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis ipsum provident tempore earum accusamus
+            quas possimus labore minima animi maxime dolor, enim neque aut architecto veniam illum atque sed.</p>
+
+        <div class="uk-offcanvas-content">
+            <div id="offcanvas-nav" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+
+                    <a href="#" class="uk-nav uk-nav-offcanvas uk-logo">Bryan Liang</a>
+                    <ul class='uk-nav uk-nav-offcanvas'>
+                        <li>
+                            <a href="#aboutMe" uk-scroll>About Me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" uk-scroll>Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" uk-scroll>Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
