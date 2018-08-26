@@ -10,6 +10,7 @@ body {
 p {
     color: black;
     font-weight: 300;
+    text-shadow: white 0px 0px 3px;
 }
 
 #portfolio {
@@ -20,4 +21,14 @@ p {
 #contact {
     font-weight: 450;
     padding-top: 15vh;
+}
+
+@media only screen and (max-width: 640px) {
+    #aboutMe {
+        padding-top: 5vh;
+    }
+
+    .uk-h3 {
+        font-size: 20px
+    }
 }
