@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: black !important;
     font-weight: 300;
     text-shadow: white 0px 0px 3px;
 }
@@ -39,4 +39,8 @@ h1 {
 
 .uk-card:hover {
     background-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+.uk-link-text {
+    color: black !important;
 }
