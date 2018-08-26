@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 300;
     text-shadow: white 0px 0px 3px;
 }
@@ -16,6 +16,10 @@ p {
 #portfolio {
     font-weight: 450;
     padding-top: 10vh;
+}
+
+h1 {
+    color: rgb(43, 43, 43) !important;
 }
 
 #contact {
@@ -31,4 +35,8 @@ p {
     .uk-h3 {
         font-size: 20px
     }
+}
+
+.uk-card:hover {
+    background-color: rgba(255, 255, 255, 0.24) !important;
 }
