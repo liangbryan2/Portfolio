@@ -1,17 +1,23 @@
 #aboutMe {
     padding-top: 25vh;
+    font-weight: 450;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
 }
 
-
+p {
+    color: black;
+    font-weight: 300;
+}
 
 #portfolio {
+    font-weight: 450;
     padding-top: 10vh;
 }
 
 #contact {
-    padding-top: 25vh;
+    font-weight: 450;
+    padding-top: 15vh;
 }
