@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Vollkorn" rel="stylesheet">
     <title>Bryan Liang</title>
 </head>
 
@@ -36,26 +36,23 @@
 
 
     <div class='uk-background-cover' style="background-image: url(assets/images/jorg-angeli-128802-unsplash.jpg)" uk-height-viewport="expand: false"
-        uk-parallax="opacity: 1, 0; viewport: 1;">
-
-        <h1 class='uk-width-1-1 uk-text-center uk-heading-primary' id='aboutMe'>About Me</h1>
-        <div class="uk-container">
-                <div class="uk-card uk-card-hover">
-                    <p class='uk-card-body uk-padding uk-dark uk-h3'>
+        uk-parallax="opacity: 1.5, 0; viewport: 1;">
+        <div class="scrim uk-background-cover" uk-height-viewport>
+            <h1 class='uk-width-1-1 uk-text-center uk-heading-primary' id='aboutMe'>About Me</h1>
+            <div class="uk-container">
+                <div class='uk-card uk-card-hover'>
+                    <p class='uk-card-body uk-padding uk-h3'>
                         <img class='uk-align-left@s uk-padding uk-padding-remove-top uk-margin-auto' src="https://via.placeholder.com/200x200" alt="200x200"> I am currently a student at the University of California Berkeley Extension Coding Bootcamp. I am
                         studying to become a full-stack web developer and you can see some of my projects in the portfolio
                         section of my website. My background is in physics and I have a degree from the University of California
-                        San Diego. I made the switch to become a web developer because I enjoy being able to create, design,
-                        and instantly view changes on a website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        San Diego. I made the switch to become a web developer because I like being able to control what
+                        I create, with this site being an example. So far in the bootcamp, we have covered the frontend portion
+                        of web developement and we are now starting to learn the backend material.
                     </p>
                 </div>
             </div>
         </div>
-
+    </div>
     <div class='uk-background-cover' style="background-image: url(assets/images/pascal-debrunner-634122-unsplash.jpg)" uk-height-viewport="expand: false"
         uk-parallax="opacity: 1.6, 0; viewport: 1;">
         <h1 class="uk-text-center uk-heading-primary" id="portfolio">Portfolio</h1>
@@ -65,31 +62,49 @@
                 <li>
                     <a href="https://liangbryan2.github.io/Crystal-Game/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/crystal.png" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Crystal Collector</h3>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://liangbryan2.github.io/TriviaGame/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/trivia.png" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Space Trivia</h3>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://liangbryan2.github.io/RPS-Multiplayer/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/rps.png" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Rock Paper Scissors</h3>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://liangbryan2.github.io/giftastic/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/gifs.png" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Giftastic</h3>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://liangbryan2.github.io/Word-Guess-Game/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/hangman.png" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Pokemon Hangman</h3>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://brianq0.github.io/SpotifyEvents/" target="_blank">
                         <img class='uk-width-1-1 uk-height-1-1' src="assets/images/eventspotter.PNG" alt="crystal game" uk-cover-container>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Event Spotter</h3>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -98,20 +113,20 @@
     <div class='uk-background-cover' style="background-image: url(assets/images/photo-1502091409938-6e32777d8707.jpg)" uk-height-viewport="expand: false">
         <h1 class='uk-text-center uk-heading-primary' id='contact'>Contact</h1>
         <div class="uk-child-width-1-3@s uk-grid-match uk-padding" uk-grid>
-            <div class="uk-card uk-card-hover">
+            <div class="uk-card uk-card-hover contactInfo">
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Email</h3>
                     <a class='uk-link-text' href="mailto:liangbryan2@gmail.com">Feel free to email me: liangbryan2@gmail.com</a>
                 </div>
             </div>
-            <div class="uk-card uk-card-hover">
+            <div class="uk-card uk-card-hover contactInfo">
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">LinkedIn</h3>
                     <a class='uk-link-text' href="https://www.linkedin.com/in/bryan-liang-4489ba140/">You can find my LinkedIn here.</a>
 
                 </div>
             </div>
-            <div class="uk-card uk-card-hover">
+            <div class="uk-card uk-card-hover contactInfo">
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Github</h3>
                     <a class='uk-link-text' href="https://github.com/liangbryan2">Check out my Github for more details on my projects.</a>
