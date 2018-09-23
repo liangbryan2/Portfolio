@@ -9,9 +9,9 @@ body {
 
 p {
     font-family: 'Vollkorn', serif;
-    color: rgb(0, 0, 0) !important;
+    color: white !important;
     font-weight: 300;
-    text-shadow: white 0 0 2px;
+    text-shadow: 0 0 1px black
 }
 
 .scrim {
@@ -44,13 +44,14 @@ h1 {
 }
 
 .uk-card:hover {
-    background-color: rgba(255, 255, 255, 0.24) !important;
+    background-color: rgba(0, 0, 0, 0.527) !important;
 }
 
 .uk-link-text {
-    color: black !important;
+    color: white !important;
+    font-size: 20px;
 }
 
 .contactInfo  {
-    text-shadow: 0px 0px 1px white
+    text-shadow: 0px 0px 2px black
 }
