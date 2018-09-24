@@ -69,37 +69,10 @@
         <div class="uk-section">
             <h1 class="uk-text-center uk-heading-primary" id="portfolio">Portfolio</h1>
             <div class='uk-container uk-padding-large'>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
-                    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 20;">
+                <div id="slideshow" class="uk-container uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+                    <ul class="uk-slideshow-items">
                         <li>
-                            <a href="https://liangbryan2.github.io/Crystal-Game/" target="_blank">
-                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/crystal.png" alt="crystal game"
-                                    uk-cover-container>
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                                    <h3 class="uk-margin-remove">Crystal Collector</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://liangbryan2.github.io/TriviaGame/" target="_blank">
-                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/trivia.png" alt="trivia"
-                                    uk-cover-container>
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                                    <h3 class="uk-margin-remove">Space Trivia</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://brianq0.github.io/SpotifyEvents/" target="_blank">
-                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/eventspotter.PNG" alt="event spotter"
-                                    uk-cover-container>
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                                    <h3 class="uk-margin-remove">Event Spotter</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://timelymanager.herokuapp.com/" target="_blank">
+                            <a href="#timely" uk-toggle>
                                 <img class='uk-width-1-1 uk-height-1-1' src="assets/images/timely.png" alt="timely"
                                     uk-cover-container>
                                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
@@ -108,7 +81,34 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://liangbryan2.github.io/RPS-Multiplayer/" target="_blank">
+                            <a href="#eventspotter" uk-toggle>
+                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/eventspotter.PNG" alt="event spotter"
+                                    uk-cover-container>
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                                    <h3 class="uk-margin-remove">Event Spotter</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#crystalgame" uk-toggle>
+                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/crystal.png" alt="crystal game"
+                                    uk-cover-container>
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                                    <h3 class="uk-margin-remove">Crystal Collector</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#trivia" uk-toggle>
+                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/trivia.png" alt="trivia"
+                                    uk-cover-container>
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                                    <h3 class="uk-margin-remove">Space Trivia</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#rps" uk-toggle>
                                 <img class='uk-width-1-1 uk-height-1-1' src="assets/images/rps.png" alt="rock paper scissors"
                                     uk-cover-container>
                                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
@@ -117,7 +117,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://liangbryan2.github.io/giftastic/" target="_blank">
+                            <a href="#gif" uk-toggle>
                                 <img class='uk-width-1-1 uk-height-1-1' src="assets/images/gifs.png" alt="giftastic"
                                     uk-cover-container>
                                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
@@ -126,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://liangbryan2.github.io/Word-Guess-Game/" target="_blank">
+                            <a href="#hangman" uk-toggle>
                                 <img class='uk-width-1-1 uk-height-1-1' src="assets/images/hangman.png" alt="word guess game"
                                     uk-cover-container>
                                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
@@ -196,6 +196,153 @@
         </div>
     </div>
 
+    <div id="hangman" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Hangman</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/Word-Guess-Game" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://liangbryan2.github.io/Word-Guess-Game/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="crystalgame" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Crystal Collector</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/Crystal-Game" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://liangbryan2.github.io/Crystal-Game/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="gif" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Giftastic</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/giftastic" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://liangbryan2.github.io/giftastic/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="rps" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Rock Paper Scissors</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/RPS-Multiplayer" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://liangbryan2.github.io/RPS-Multiplayer/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="trivia" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Trivia</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/TriviaGame" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://liangbryan2.github.io/TriviaGame/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="eventspotter" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Event Spotter</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/brianq0/SpotifyEvents" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://brianq0.github.io/SpotifyEvents/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="timely" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">time.ly</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/liangbryan2/timely" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="http://timelymanager.herokuapp.com/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>

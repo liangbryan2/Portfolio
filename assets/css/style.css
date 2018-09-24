@@ -66,3 +66,6 @@ h1 {
     height: 50px;
 }
 
+.uk-slideshow-items {
+    max-height: 70vh;
+}
