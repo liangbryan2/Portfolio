@@ -43,21 +43,17 @@
                 <div class="uk-container">
                     <div class='uk-card uk-card-hover'>
                         <p class='uk-card-body uk-padding uk-h3'>
-                            <img class='uk-align-left@s uk-padding uk-padding-remove-top uk-margin-auto' src="https://via.placeholder.com/200x200"
-                                alt="200x200"> I am currently a student at the University of California Berkeley
+                            <img class='uk-align-left@s uk-padding uk-padding-remove-top uk-margin-auto ' id='profile_pic' src="./assets/images/DSC_5855.jpg"
+                                alt="200x200"> I am a full stack web developer that studied at the University of California Berkeley
                             Extension
-                            Coding Bootcamp. I am
-                            studying to become a full-stack web developer and you can see some of my projects in the
+                            Coding Bootcamp. You can see some of my projects that I have created in the past in the
                             portfolio
                             section of my website. My background is in physics and I have a degree from the University
                             of
                             California
                             San Diego. I made the switch to become a web developer because I like being able to control
                             what
-                            I create, with this site being an example. So far in the bootcamp, we have covered the
-                            frontend
-                            portion
-                            of web developement and we are now starting to learn the backend material.
+                            I create, with this site being an example. 
                         </p>
                     </div>
                 </div>
@@ -71,6 +67,15 @@
             <div class='uk-container uk-padding-large'>
                 <div id="slideshow" class="uk-container uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
                     <ul class="uk-slideshow-items">
+                        <li>
+                            <a href="#snacktime" uk-toggle>
+                                <img class='uk-width-1-1 uk-height-1-1' src="assets/images/snacktime.PNG" alt="snacktime"
+                                    uk-cover-container>
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                                    <h3 class="uk-margin-remove">Snack Time</h3>
+                                </div>
+                            </a>
+                        </li>
                         <li>
                             <a href="#timely" uk-toggle>
                                 <img class='uk-width-1-1 uk-height-1-1' src="assets/images/timely.png" alt="timely"
@@ -334,6 +339,27 @@
                     Repository
                 </a>
                 <a href="http://timelymanager.herokuapp.com/" target="_blank">
+                    <span uk-icon="icon: link; ratio: 3;"></span>
+                    Website
+                </a>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="snacktime" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Snack Time</h2>
+            </div>
+            <div class="uk-modal-body" uk-grid>
+                <a href="https://github.com/brianqian/SnackTime" target="_blank">
+                    <span uk-icon="icon: github; ratio: 3;"></span>
+                    Repository
+                </a>
+                <a href="https://snacktimedeployment.herokuapp.com/" target="_blank">
                     <span uk-icon="icon: link; ratio: 3;"></span>
                     Website
                 </a>

@@ -69,3 +69,8 @@ h1 {
 .uk-slideshow-items {
     max-height: 70vh;
 }
+
+#profile_pic {
+    width: 300px;
+    height: auto;
+}
